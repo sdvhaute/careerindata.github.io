@@ -1,0 +1,306 @@
+/* CSS variables */
+@import url(partials/var.css);
+
+
+*,
+html,
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: var(--colortext);
+
+    background-color: #fff ;
+
+    font-family: var(--raleway  );
+
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+
+/* Start Navbar */
+
+
+nav {
+    height: fit-content;
+
+    position: fixed;
+    z-index: 99999;
+    width: 100vw;
+
+    color: var(--colortext);
+    font-size: 1rem;
+
+    border-bottom:  2px solid var(--color2);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    height: 70px;
+}
+
+.nav-links a {
+    color: #FFF;
+}
+
+/* LOGO */
+.logo {
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* NAVBAR MENU */
+.menu {
+    display: flex;
+    font-size: 18px;
+}
+
+.nav-link {
+    font-family: var(--ralewaybold);
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: var(--color2);
+
+    margin: 0 10px;
+    padding: 10px;
+}
+
+.nav-link:hover {
+    background-color: #FFF;
+    color: var(--color2);
+    transition: 1s;
+}
+
+
+/*RESPONSIVE NAVBAR MENU STARTS*/
+input[type=checkbox] {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+}
+
+
+@media (max-width: 768px) {
+
+    nav {
+        background-color: #FFF;
+        color: var(--color2);
+    }
+    .nav-links a {
+        color: var(--colortext);
+    }
+
+    .menu {
+        display: none;
+        position: absolute;
+        background-color: var(--bgcolor2);
+        right: 0;
+        left: 0;
+        text-align: end;
+        padding: 16px 0;
+
+        border-bottom:  2px solid var(--color2);
+    }
+
+    .menu li+li {
+        margin-top: 12px;
+    }
+
+    input[type=checkbox]:checked~.menu {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .nav-link {
+        background-color: rgba(255, 255, 255, 0);
+        border: none;
+        border-radius: none;
+    }
+
+    .nav-link:hover {
+        background-color: #FFF;
+        color: var(--color2);
+    }
+}
+/* End Navbar */
+
+
+/* Start Homepage */
+
+.block {
+    background-color: #FFF;
+    height: 70px;
+}
+
+.container-home {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+
+    /* margin: 10vh 0; */
+}
+
+.home-card {
+    width: 50vw;
+    height: auto;
+    padding: 3rem;
+    margin-top: 10vh;
+
+    border: 3px solid var(--color2);
+
+    box-shadow: 5px 10px #d1cece;
+}
+.home-card:hover {
+    transform:scale(1.01);
+    
+    box-shadow: 10px 20px #d1cece;
+}
+
+.home-card-text {
+    font-size: 20px;
+    line-height: 35px;
+}
+
+.signature {
+    font-family: var(--homemade);
+    font-size: 32px;
+    line-height: 60px;
+}
+
+.formbox {
+    margin-top: 20px;
+    height: 40px;
+    width: 200px;
+
+    border: 3px solid var(--color2);
+    border-radius: 20px;
+}
+
+.submitbox {
+    margin-top: 20px;
+    height: 40px;
+    width: 100px;
+    
+
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    background-color: var(--color2);
+    color: #FFF;
+    border: 3px solid var(--color2);
+    border-radius: 20px;
+}
+
+
+@media (max-width: 1200) {
+    .home-card {
+        width: 80vw;
+    }
+
+
+
+}
+@media (max-width: 768px) {
+    .home-card {
+        width: 80vw;
+    }
+
+
+
+}
+
+
+
+/* End Homepage */
+
+
+
+/* Start Review Table */
+
+.container-review {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.review-row {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: end;
+
+    width: 80vw;
+}
+
+.review-col {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1%;
+
+    min-height: 50px;
+    border: 1px solid var(--color2);
+
+    text-align: center;
+}
+
+.col-1 {
+    width: 10vw;
+    border-left: none;
+}
+
+.col-2 {
+    width: 60vw;
+}
+
+.col-3 {
+    width: 10vw;
+    border-right: none;
+}
+
+.row-title {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.row-title .review-col {
+    border-top: none;
+}
+
+.row-end .review-col{
+    border-bottom: none;
+}
+
+
+.review-brand {
+    height: 60px;
+    width: auto;
+}
+
+
+
+
+/* End Review Table */

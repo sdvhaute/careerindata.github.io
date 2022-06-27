@@ -1,0 +1,35 @@
+
+/* CSS Variables */
+:root {
+    --color1: #f6f5f0;
+    --color2: #1d302e;
+    --color3: #c9cbbe;
+    --color4: #e2b282;
+    --color5: #ecdbc9;
+
+    --color6: #cbaf99;
+    --color7: #ad6d4a;
+    --color8: #fff;
+    --color9: #fff;
+    --color10: #fff;
+
+    --colortext: #1d302e;
+
+    --bgcolor1:#fff;
+    --bgcolor2:#fff;
+    --bgcolor3:#fff;
+
+
+    --roboto: 'Roboto', sans-serif;
+    --shadows: 'Shadows Into Light', cursive;
+    --handlee: 'Handlee', cursive;
+    --montserrat: 'Montserrat', sans-serif;
+    --montserratbold:'Montserrat', bold;
+    --montserratsubrayada: 'Montserrat Subrayada', sans-serif;
+    --kdam: 'Kdam Thmor Pro', sans-serif;
+    --raleway:'Raleway', sans-serif;
+    --ralewaybold:'Raleway', bold;
+    --homemade: 'Homemade Apple', cursive;
+    --neucha:  'Neucha', cursive;
+
+} 
