@@ -213,7 +213,7 @@ input[type=checkbox] {
 }
 
 
-@media (max-width: 1200) {
+@media (min-width:769)and (max-width: 1200) {
     .home-card {
         width: 80vw;
     }
@@ -238,10 +238,14 @@ input[type=checkbox] {
 
 /* Start Review Table */
 
-.container-review {
+.container-review-table {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.container-review-card {
+    display: none;
 }
 
 .review-row {
@@ -299,6 +303,40 @@ input[type=checkbox] {
     height: 60px;
     width: auto;
 }
+
+
+@media (max-width: 1200) {
+    .container-review-table {
+        display: none;
+    }
+
+    /* .container-review-card {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .review-card-row {
+        display: flex; 
+        flex-direction: column;
+    } */
+
+
+
+}
+
+@media (min-width: 481px) and (max-width: 1200px) {
+    .container-review-table {
+        display: none;
+    }
+
+}
+/* 
+@media (max-width: 768px) {
+    
+
+
+
+} */
 
 
 
