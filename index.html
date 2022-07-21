@@ -16,7 +16,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Handlee&family=Homemade+Apple&family=Kdam+Thmor+Pro&family=Montserrat+Subrayada:wght@400;700&family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,800&family=Neucha&family=Raleway:wght@300;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shadows+Into+Light&display=swap"
         rel="stylesheet">
-
+    <!-- Fontawsome Icons -->
+    <script src="https://kit.fontawesome.com/dd43574969.js" crossorigin="anonymous"></script>
 
     <!-- Bootstrap Stylesheet-->
     <!-- 
@@ -38,15 +39,20 @@
             <!-- LOGO -->
             <div class="logo title-class">Career in Data</div>
             <ul class="nav-links">
-                <input type="checkbox" id="checkbox_toggle" />
-                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+                <!-- <input type="checkbox" id="checkbox_toggle" />
+                <label for="checkbox_toggle" class="hamburger">&#9776;</label> -->
                 <!-- NAVIGATION MENUS -->
-                <div class="menu">
+                <!-- <div class="menu">
                     <li class="nav-item"><a class="nav-link" href="#aboutlink">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#concept">Table</a></li>
                     <li class="nav-item"><a class="nav-link" href="#concept">Blog</a></li>
-                </div>
+                </div> -->
             </ul>
+            <div class="slider">
+                <div class="outer-box">
+                    <div class="inner-circle"></div>
+                </div>
+            </div>
         </nav>
 
 
@@ -60,13 +66,13 @@
             <div class="home-card">
                 <h1 class="home-card-title"> Hi there! Thanks for visiting 🙂</h1>
 
-                <p class="home-card-text"> 
+                <p class="home-card-text">
                     I am building a framework on how to get a career in data on this website. <br>
                     Elements will be added regularly. <br>
                     Sign up if you want to join the ride!<br>
 
                 <form action="https://formsubmit.co/sennevermassen@outlook.com" method="POST">
-                    <input  class="formbox" type="email" name="email" required>
+                    <input class="formbox" type="email" name="email" required placeholder="E-mail">
                     <button class="submitbox" type="submit">Join!</button>
                 </form> <br>
 
@@ -85,65 +91,79 @@
 
         <div class="container-review-table">
 
-            <div class="review-row row-title">
+            <div class="review-row row-title clicked">
                 <div class="review-col col-1">Brand</div>
                 <div class="review-col col-2">Review</div>
                 <div class="review-col col-3">Score</div>
             </div>
             <div class="review-row row-1">
-                <div class="review-col col-1"><img class="review-brand" src="/img/brandsqlbolt.jfif" alt=""></div>
-                <div class="review-col col-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor reiciendis
+                <div class="review-col col-1 active"><img class="review-brand" src="/img/brandsqlbolt.jfif" alt="">
+                </div>
+                <div class="review-col col-2 active">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor
+                    reiciendis
                     necessitatibus optio ab nesciunt quia nostrum, pariatur labore! Voluptates, maiores!</div>
-                <div class="review-col col-3">9/10</div>
+                <div class="review-col col-3 active">9/10</div>
+                <div class="review-col col-4"><a href="https://sqlbolt.com/" target="_blank">https://sqlbolt.com/</a>
+                </div>
+                <div class="plus-icon"><i class="fa-solid fa-plus"></i></div>
             </div>
             <div class="review-row row-2">
-                <div class="review-col col-1">Brand</div>
-                <div class="review-col col-2">Review</div>
-                <div class="review-col col-3">Score</div>
+                <div class="review-col col-1 active"><img class="review-brand" src="/img/brandsqlbolt.jfif" alt="">
+                </div>
+                <div class="review-col col-2 active">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor
+                    reiciendis
+                    necessitatibus optio ab nesciunt quia nostrum, pariatur labore! Voluptates, maiores!</div>
+                <div class="review-col col-3 active">9/10</div>
+                <div class="review-col col-4"><a href="https://sqlbolt.com/" target="_blank">https://sqlbolt.com/</a>
+                </div>
+                <div class="plus-icon"><i class="fa-solid fa-plus"></i></div>
             </div>
             <div class="review-row row-3">
-                <div class="review-col col-1">Brand</div>
-                <div class="review-col col-2">Review</div>
-                <div class="review-col col-3">Score</div>
+                <div class="review-col col-1 active"><img class="review-brand" src="/img/brandsqlbolt.jfif" alt="">
+                </div>
+                <div class="review-col col-2 active">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor
+                    reiciendis
+                    necessitatibus optio ab nesciunt quia nostrum, pariatur labore! Voluptates, maiores!</div>
+                <div class="review-col col-3 active">9/10</div>
+                <div class="review-col col-4"><a href="https://sqlbolt.com/" target="_blank">https://sqlbolt.com/</a>
+                </div>
+                <div class="plus-icon"><i class="fa-solid fa-plus"></i></div>
             </div>
             <div class="review-row row-4">
-                <div class="review-col col-1">Brand</div>
-                <div class="review-col col-2">Review</div>
-                <div class="review-col col-3">Score</div>
+                <div class="review-col col-1 active"><img class="review-brand" src="/img/brandsqlbolt.jfif" alt="">
+                </div>
+                <div class="review-col col-2 active">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor
+                    reiciendis
+                    necessitatibus optio ab nesciunt quia nostrum, pariatur labore! Voluptates, maiores!</div>
+                <div class="review-col col-3 active">9/10</div>
+                <div class="review-col col-4"><a href="https://sqlbolt.com/" target="_blank">https://sqlbolt.com/</a>
+                </div>
+                <div class="plus-icon"><i class="fa-solid fa-plus"></i></div>
             </div>
             <div class="review-row row-end">
-                <div class="review-col col-1">Brand</div>
-                <div class="review-col col-2">Review</div>
-                <div class="review-col col-3">Score</div>
+                <div class="review-col col-1 active"><img class="review-brand" src="/img/brandsqlbolt.jfif" alt="">
+                </div>
+                <div class="review-col col-2 active">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor
+                    reiciendis
+                    necessitatibus optio ab nesciunt quia nostrum, pariatur labore! Voluptates, maiores!</div>
+                <div class="review-col col-3 active">9/10</div>
+                <div class="review-col col-4"><a href="https://sqlbolt.com/" target="_blank">https://sqlbolt.com/</a>
+                </div>
+                <div class="plus-icon"><i class="fa-solid fa-plus"></i></div>
             </div>
 
         </div>
 
-        <div class="container-review-card">
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
 
-            <div class="review-card-row">
-                <div class="review-card-col card-col1">hallo</div>
-
-
-
-
-                <div class="review-card-col card-col1"></div>
-                <div class="review-card-col card-col1"></div>
-                <div class="review-card-col card-col1"></div>
-                <div class="review-card-col card-col1"></div>
-                <div class="review-card-col card-col1"></div>
-            </div>
-
+        <div class="to-top-line">
+            <i class="fa-solid fa-arrow-up fa-3x" onclick="toTop()"></i>
         </div>
 
-
-
-
-        <div class="block"></div>
-        <div class="block"></div>
-        <div class="block"></div>
-        <div class="block"></div>
-        <div class="block"></div>
 
         <!-- End Review Table -->
 
