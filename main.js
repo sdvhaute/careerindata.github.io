@@ -1,3 +1,5 @@
+// Start Dark/Light mode slides
+
 const slider = document.querySelector('.slider');
 const outer = document.querySelector('.outer-box');
 const inner = document.querySelector('.inner-circle');
@@ -20,8 +22,32 @@ slider.addEventListener('click', function () {
 
 })
 
+// Thank you message after email submission 
+const homeCards = document.querySelectorAll('.home-card');
+const joinButton = document.querySelector('.submitbox');
+
+joinButton.addEventListener('click', () => {
+    homeCards.forEach( card => {
+        card.classList.toggle('active');
+    })
+    
+})
+
+// Close homecard popup message
+const closeButtons = document.querySelectorAll('.closebutton');
+
+closeButtons.forEach((closeButton) => {
+    closeButton.addEventListener('click', () => {
+        homeCards.forEach( card => {
+            card.classList.remove('active');
+        })
+
+    })
+})
 
 
+
+// Source Cards turning around
 const cardrows = document.querySelectorAll('.review-row');
 const cardcols = document.querySelectorAll('.review-col');
 const col1 = document.querySelectorAll('.col-1');

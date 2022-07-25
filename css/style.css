@@ -23,6 +23,7 @@ body {
     border-color: var(--bgcolor1);
     box-shadow: var(--bgcolor1);
 }
+
 .dark-reversed {
     color: var(--colortext);
     background-color: var(--bgcolor1);
@@ -38,6 +39,7 @@ a {
 li {
     list-style: none;
 }
+
 button {
     cursor: pointer;
 }
@@ -58,9 +60,11 @@ button {
     border: none;
 
 }
+
 .slider {
     cursor: pointer;
 }
+
 .outer-box {
     border: 4px solid;
     border-radius: 25Px;
@@ -209,25 +213,42 @@ input[type=checkbox] {
 
 .container-home {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     padding: 2rem;
 }
 
+/* Start Pop-up message */
+
 .home-card {
+    display: none;
     max-width: 900px;
     height: auto;
     padding: 3rem;
-    margin-top: 10vh;
+    margin: 5vh;
 
     border: 3px solid;
     box-shadow: 5px 10px;
+    position: relative;
+
+    transition: transform 0.5s linear;
 }
 
 .home-card:hover {
-    transform: scale(1.01);
-    box-shadow: 10px 20px;
+    transform: scale(1.03);
+}
+
+.closebutton {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    transition: transform 2s ease-in;
+}
+
+.closebutton:hover {
+    transform: rotate(450deg);
 }
 
 .home-card-text {
@@ -266,6 +287,91 @@ input[type=checkbox] {
     border: 3px solid var(--colortext);
     border-radius: 20px;
 }
+
+.heart {
+    color: red;
+    display: inline;
+    font-size: 35px;
+}
+
+/* End Popup message */
+
+/* Start Introduction Message */
+.intro-message {
+    text-align: center;
+    padding: 10vh;
+    line-height: 1.5rem;
+}
+
+.intro-message h1 {
+    padding: 20px;
+    padding-top: 0;
+}
+
+.sources {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5vh;
+}
+
+.button-source {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3vh;
+    padding: 5%;
+
+    background-color: var(--colortext);
+    color: var(--bgcolor1);
+
+    width: 400px;
+    height: 200px;
+
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 35px;
+
+    border: 2px solid;
+    box-shadow: 5px 10px;
+
+    transition: transform 0.5s linear;
+
+    position: relative;
+}
+
+.button-source:hover {
+    transform: scale(1.05);
+}
+
+.button-source .under-construction {
+    font-size: 22px;
+    line-height: 0;
+    position: absolute;
+    bottom: 30px;
+}
+
+.soft-skills {
+    background-color: grey;
+}
+
+.message-hover {
+    font-size: 22px;
+    line-height: 0;
+    position: absolute;
+    bottom: 30px;
+}
+
+@media (max-width: 1200px)  {
+    .sources{
+        flex-direction: column; 
+    }
+}
+
+/* End Introduction Message */
+
 /* End Homepage */
 
 
@@ -311,6 +417,7 @@ input[type=checkbox] {
     width: 10vw;
     border-right: none;
 }
+
 .col-4 {
     display: none;
 }
@@ -362,17 +469,18 @@ input[type=checkbox] {
         padding: 1rem;
         position: relative;
 
-        transition: transform 1s ease-in-out;
+        transition: transform 1s linear;
         transition: background-color 1s ease-in-out;
 
-        
+
     }
 
     .row-title {
         display: none;
     }
+
     .review-brand {
-        position:static;
+        position: static;
     }
 
     .review-col {
@@ -410,9 +518,11 @@ input[type=checkbox] {
 .active {
     display: inline;
 }
+
 .rotate {
     transform: rotate(45deg);
 }
+
 /* .turn {
     transform: rotateY(180deg);
 }
@@ -431,4 +541,4 @@ input[type=checkbox] {
     padding: 30px;
 }
 
- /* End Scroll back to top of page */
+/* End Scroll back to top of page */
