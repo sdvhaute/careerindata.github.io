@@ -7,19 +7,14 @@
     --color4: #e2b282;
     --color5: #ecdbc9;
 
-    --color6: #cbaf99;
-    --color7: #ad6d4a;
-    --color8: #fff;
-    --color9: #fff;
-    --color10: #fff;
-
     --colortext: #1d302e;
+    --colortextdark: #f6f5f0;;
     --colortextfade: #1d302e3f;
     
 
     --bgcolor1:#fff;
-    --bgcolor2:#fff;
-    --bgcolor3:#fff;
+    --bgcolordark:#1d302e;
+    
 
 
     --roboto: 'Roboto', sans-serif;
