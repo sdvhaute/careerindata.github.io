@@ -90,16 +90,17 @@ plusIcons.forEach((plusIcon, index) => {
 
         sourceBlocks.forEach((sourceBlock, index2) => {
             if (index2 !== index) {
-                sourceBlock.classList.toggle('hidden');
+                // sourceBlock.classList.toggle('hidden');
             } else {
                 if (sourceBlocks[index].classList.contains('closed')) {
-                    sourceBlocks[index].style.height = 'fit-content';
-                    sourceBlocks[index].style.width = 'fit-content';
-                    sourceBlocks[index].style.maxWidth = '800px';
+                    // sourceBlocks[index].style.height = 'fit-content';
+                    // sourceBlocks[index].style.width = 'fit-content';
+                    sourceBlocks[index].style.maxWidth = '300px';
+                    sourceBlocks[index].style.maxHeight = '800px';
                     sourceBlocks[index].classList.remove('closed');
                 } else {
-                    sourceBlocks[index].style.height = '200px';
-                    sourceBlocks[index].style.width = '200px';
+                    sourceBlocks[index].style.maxHeight = '200px';
+                    sourceBlocks[index].style.maxWidth = '200px';
                     sourceBlocks[index].classList.add('closed');
                 }
                 sourceBlockScores[index].classList.toggle('hidden');
@@ -108,6 +109,7 @@ plusIcons.forEach((plusIcon, index) => {
 
             }
         })
+
     })
 
 
